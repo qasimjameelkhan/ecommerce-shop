@@ -1,0 +1,41 @@
+<!-- public/account.html -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Account</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="/"><div class="logo">A</div><div><div style="font-weight:800">Aurora Store</div></div></a>
+      <div class="header-actions"><a href="/cart.html" class="btn btn-ghost">Cart</a></div>
+    </header>
+
+    <main style="margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <section>
+        <h3>Login</h3>
+        <form id="loginForm">
+          <input name="email" placeholder="Email" required />
+          <input name="password" placeholder="Password" type="password" required />
+          <div style="margin-top:12px"><button class="btn btn-primary">Login</button></div>
+        </form>
+      </section>
+
+      <section>
+        <h3>Create account</h3>
+        <form id="registerForm">
+          <input name="name" placeholder="Full name" required />
+          <input name="email" placeholder="Email" required />
+          <input name="password" placeholder="Password" type="password" required />
+          <div style="margin-top:12px"><button class="btn btn-primary">Register</button></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> Aurora Store</footer>
+  </div>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>

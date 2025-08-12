@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aurora Store — Shop</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <header class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold">Aurora Store</a>
+      <a href="/cart.html" class="text-gray-600">Cart (<span id="top-cart-count-2">0</span>)</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold">All Products</h1>
+      <div class="flex items-center gap-3">
+        <select id="sort" class="border rounded px-3 py-2">
+          <option value="new">Newest</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  </main>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>
