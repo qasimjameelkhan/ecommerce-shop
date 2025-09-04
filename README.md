@@ -105,7 +105,7 @@ POST /api/orders – Place a new order
 
 4. dotenv for environment management
 
-#🤝 Contributing
+# 🤝 Contributing
 
 Pull requests are welcome!
 
