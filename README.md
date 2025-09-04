@@ -1,4 +1,4 @@
-#E-commerce Shop (Node.js + MongoDB)
+#E-commerceShop
 
 A simple and scalable e-commerce backend API built with Node.js, Express, and MongoDB.
 
