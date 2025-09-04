@@ -18,58 +18,67 @@ Secure environment configuration with .env
 
 Middleware-based authentication & error handling
 
-📂 Project Structure
+# 📂 Project Structure
+
 ecommerce-shop-master/
+
 │── server.js          # Entry point
+
 │── config/db.js       # Database connection
+
 │── controllers/       # Route logic (Auth, Products, Orders)
+
 │── models/            # Mongoose models
+
 │── middleware/Auth.js # JWT Authentication
+
 │── .env.example       # Example environment file
+
 │── package.json       # Dependencies & scripts
 
-🔧 Installation
 
-Clone the repo:
+# 🔧 Installation
+
+1. Clone the repo:
 
 git clone https://github.com/your-username/ecommerce-shop.git
 cd ecommerce-shop
 
 
-Install dependencies:
+2. Install dependencies:
 
 npm install
 
 
-Set up environment variables:
+3. Set up environment variables:
 
 Copy .env.example → .env
 
 Add your MongoDB URI, JWT secret, and other configs.
 
-▶️ Running the App
 
-Start the server:
+# ▶️ Running the App
+
+1. Start the server:
 
 npm start
 
 
-For development with hot reload:
+2. For development with hot reload:
 
 npm run dev
-
 
 Server runs on http://localhost:5000
  (default).
 
-📌 API Endpoints
-Auth
+# 📌 API Endpoints
+# Auth
 
 POST /api/auth/register – Register new user
 
 POST /api/auth/login – Login and get JWT
 
-Products
+# Products
 
 GET /api/products – Get all products
 
@@ -79,27 +88,29 @@ PUT /api/products/:id – Update product
 
 DELETE /api/products/:id – Delete product
 
-Orders
+# Orders
 
 GET /api/orders – Get user’s orders
 
 POST /api/orders – Place a new order
 
-🛠️ Tech Stack
 
-Node.js + Express.js
+# 🛠️ Tech Stack
 
-MongoDB + Mongoose
+1. Node.js + Express.js
 
-JWT Authentication
+2. MongoDB + Mongoose
 
-dotenv for environment management
+3. JWT Authentication
 
-🤝 Contributing
+4. dotenv for environment management
+
+#🤝 Contributing
 
 Pull requests are welcome!
+
 For major changes, please open an issue first to discuss your idea.
 
-📄 License
+# 📄 License
 
 This project is licensed under the MIT License.
